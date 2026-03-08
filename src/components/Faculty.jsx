@@ -6,7 +6,7 @@ const faculty = [
         role: 'Principal & Director',
         college: 'Devi Lal Educational & Welfare Trust',
         exp: '25+ Years',
-        image: 'https://www.lalclasses.com/images/dir-photo.png',
+        image: '/images/dir-photo.png',
         color: 'bg-[#800000]'
     },
     {

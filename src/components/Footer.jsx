@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="lg:col-span-2">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="p-1 rounded-lg bg-white overflow-hidden w-12 h-12 shadow-md">
-                                <img src="https://www.lalclasses.com/Images/logo1.jpg" alt="Lal Classes Logo" className="w-full h-full object-contain" />
+                                <img src="/images/logo1.jpg" alt="Lal Classes Logo" className="w-full h-full object-contain" />
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-2xl font-black text-white leading-none tracking-tight">LAL CLASSES</span>

@@ -13,7 +13,7 @@ export default function Hero() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://www.lalclasses.com/Admin/images/071221031623.jpg"
+                    src="/images/Admin/images/071221031623.jpg"
                     alt="Lal Classes Campus"
                     className="w-full h-full object-cover scale-110"
                 />
@@ -74,7 +74,7 @@ export default function Hero() {
                 >
                     <div className="relative group overflow-hidden rounded-3xl border-4 border-[#FFF200]/30 shadow-3xl">
                         <img
-                            src="https://www.lalclasses.com/Admin/images/271121030029.jpg"
+                            src="/images/Admin/images/271121030029.jpg"
                             alt="Students"
                             className="w-full h-auto grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                         />
