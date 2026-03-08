@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #800000;
+  /* Deep Maroon */
+  --color-secondary: #FFF200;
+  /* Bright Yellow */
+  --color-accent: #C59D5F;
+  /* Gold */
+  --color-slate-900: #1a1a1a;
+  --color-text-main: #2D3748;
+  --color-text-muted: #718096;
+  --color-bg-light: #FFFFFF;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-bg-light);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(128, 0, 0, 0.1);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #800000, #C59D5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-maroon-gradient {
+    background: linear-gradient(135deg, #800000 0%, #4d0000 100%);
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-[#800000] text-white rounded-lg font-bold transition-all hover:bg-[#600000] hover:shadow-xl active:scale-95;
+  }
+
+  .btn-yellow {
+    @apply px-8 py-3 bg-[#FFF200] text-[#800000] rounded-lg font-bold transition-all hover:bg-[#e6d800] hover:shadow-xl active:scale-95 border-b-4 border-[#C59D5F];
+  }
+
+  .section-padding {
+    @apply py-24 px-6 max-w-7xl mx-auto;
+  }
+}
+
+/* Animations */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
