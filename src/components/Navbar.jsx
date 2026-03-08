@@ -30,7 +30,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <a href="#home" className="flex items-center gap-4">
                         <div className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-16'} p-1 bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden`}>
-                            <img src="http://www.lalclasses.com/Images/logo1.jpg" alt="Lal Classes Logo" className="h-full w-auto object-contain" />
+                            <img src="https://www.lalclasses.com/Images/logo1.jpg" alt="Lal Classes Logo" className="h-full w-auto object-contain" />
                         </div>
                         <div className="flex flex-col">
                             <span className={`text-xl md:text-2xl font-black leading-none ${scrolled ? 'text-[#800000]' : 'text-white drop-shadow-md'}`}>
